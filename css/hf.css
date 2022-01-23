@@ -1,0 +1,341 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body
+{
+    overflow-x: hidden;
+    display: block;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #041105;
+    font-weight: 500;
+    font-family: "Open Sans", Arial, serif;
+}
+
+/*header*/
+
+    /*Navbar*/
+        header
+        {
+            z-index: 2;
+            position: fixed;
+            width: 100%;
+            padding: 10px 10px 5px 50px;
+            box-shadow: 0px 3px 3px rgb(75, 73, 73);
+            background: linear-gradient(to right, rgba(134, 207, 255, 0.952), rgb(248, 248, 130),rgba(255, 134, 54, 0.884));
+            transition: 0.5s;
+        }
+
+        /*Logo*/
+            h3#logo
+            {
+                font-family: system-ui;
+                position: relative;
+                margin-top: -5px;
+                font-size: 30px;
+                float: left;
+                font-weight: 100;
+            }
+
+            #logo span
+            {
+                font-weight: 700;
+            }
+
+        /*Menu-bar*/
+            div.main-menu
+            {
+                float: right;
+            }
+
+            a
+            {
+                color: black;
+                text-decoration: none;
+            }
+            
+            .main-menu ul
+            {
+                display: flex;
+                list-style: none;
+                margin-top: 0px;
+            }
+
+            .main-menu ul li
+            {
+                font-weight: 600;
+                padding: 5px 15px;
+            }
+
+            .main-menu ul li:hover
+            {
+                
+                border-radius: 3px;
+                box-shadow: 0px 0px 5px 3px #2c27276e;
+                color: white;
+                transition: 0.5s;
+            }
+
+            li.active
+            {
+                color:white;
+                box-shadow: 0px 0px 5px 3px #221f1f6e;
+                border-radius: 3px;
+            }
+
+            /*drop-down after login*/
+                .dropdown 
+                {
+                    position: relative;
+                    display: inline-block;
+                }
+
+                .drop-btn
+                {
+                    cursor: pointer;
+                }
+
+                .dropdown-content 
+                {
+                    height: 45px;
+                    width: 85px;
+                    right: 0;
+                    display: none;
+                    margin: 0px 0px 0px 10px;
+                    position: absolute;
+                }
+
+                .dropdown-content a 
+                {
+                    color: black;
+                    padding: 8px 12px;
+                    height: 38px;
+                    display: block;
+                    border-radius: 5px;
+                    background-color: white;
+                    box-shadow: 0px 8px 16px 0px rgb(0, 0, 0, 0.2);
+                    z-index: 1;
+                    margin-top: 10px;
+                }
+                
+                .dropdown-content a:hover 
+                {
+                    color:red;
+                    background-color: rgb(241, 232, 232);
+                    transition: 0.5s;
+                }
+                
+                .dropdown:hover .dropdown-content 
+                {
+                    display: block;
+                    border-radius: 5px;
+                }
+                
+                .dropdown:hover .dropbtn 
+                {
+                    border-radius: 3px;
+                    box-shadow: 0px 0px 5px 3px #2c27276e;
+                    color: white;
+                    transition: 0.5s;
+                }
+
+            /*Scroll*/
+                .scrolling-active
+                {
+                    background-color: black;
+                    background-image: none;
+                    box-shadow: 0px 3px 5px rgb(0, 0, 0, 0.4);
+                    padding: 10px 10px 0px 50px;
+                }
+
+                .scrolling-active .home ul li
+                {
+                    margin-bottom: 4px;
+                }
+
+                .scrolling-active .main-menu ul li:hover
+                {
+                    border-bottom: 4px solid white;
+                    color: red;
+                    transition: 0.0s;
+                    border-radius: 0px;
+                    box-shadow: none;
+                    margin-bottom: 0px;
+                }
+
+                .scrolling-active li.active
+                {
+                    color:red;
+                    border-bottom: 4px solid white;
+                    border-radius: 0px;
+                    box-shadow: none;
+                    margin-bottom: 0px;
+                }
+
+                .scrolling-active li.drop-btn
+                {
+                    margin-bottom: 3px;
+                }
+
+                .scrolling-active li.drop-btn:hover
+                {
+                    margin-bottom: 0px;
+                }
+
+                .scrolling-active .dropdown-content
+                {
+                    height: 38px;
+                }
+
+                .scrolling-active .dropdown-content a
+                {
+                    margin-top: 0px;
+                }
+
+                .scrolling-active .main-menu>ul>a, .scrolling-active .main-menu li, .scrolling-active #logo
+                {
+                    color: white;
+                }
+
+        /*Title*/
+            div.slides, div.bg
+            {
+                width: 100%;
+                background-size: cover;
+            }
+
+            .title h1
+            {
+                font-size: 40px;
+                color: rgb(255, 255, 255);
+                width: 100%;    
+                padding: 195px 0;
+                text-align: center;
+                animation-name: pop;
+                animation-duration: 3s;
+                transform: scale(1.5);
+            }
+
+            @keyframes pop
+            {
+                0%
+                {
+                    transform: scale(0.5);
+                    color: rgba(139, 139, 168, 0.596);
+                }
+                100%
+                {
+                    transform: scale(1.5);
+                }
+            }
+
+/*php message*/
+    div.suc-msg
+    {
+        margin-bottom: 20px;
+        font-size: 20px;
+        box-sizing: border-box;
+        background-color: rgb(148, 230, 148);
+        color: #006800;
+        padding: 10px 30px;
+        border-radius: 10px;
+    }
+
+    div.fail-msg
+    {
+        margin-bottom: 10px;
+        font-size: 20px;
+        box-sizing: border-box;
+        background-color: rgba(230, 157, 148);
+        color: #680c00;
+        padding: 10px 30px;
+        border-radius: 10px;
+    }
+
+/*footer*/
+    div.foot
+    {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 25% 25%;
+        justify-items: center;
+        line-height: 25px;
+        color: white;   
+        text-align: center;
+        width: 100%;
+        height: 130px;
+        background-color: rgb(0, 0, 0);
+        padding: 5px 0px 15px;
+    }
+
+    /*Social Media icons*/
+        div.social-media
+        {
+            position: absolute;
+            right: 0;
+            bottom: auto;
+            margin-top: 15px;
+            padding-right: 10px;
+            width: fit-content;
+        }
+
+        div.social-media img
+        {
+            opacity: 0.9;
+            width: 28px;
+            height: 25px;
+            margin: 0px 5px;
+            transition: 0.3s;
+        }
+
+        #twitter
+        {
+            width: 26px;
+        }
+
+        #insta
+        {
+            width: 24px;
+        }
+
+        div.social-media img:hover
+        {
+            opacity: 1;
+            transform: scale(1.2);
+        }
+
+    /*Foot Text*/
+        div.help
+        {
+            margin:auto;
+        }
+
+        div.help ul
+        {
+            width: fit-content;
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        div.help li
+        {
+            padding-right: 15px;
+    
+        }
+
+        div.help a
+        {
+            color: white;
+        }    
+
+        div.help a:hover
+        {
+            color: red;
+            transition: 0.5s;
+        }

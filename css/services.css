@@ -1,0 +1,115 @@
+body
+{
+    display: block;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #041105;
+    font-weight: 500;
+    line-height: 20px;
+}
+div.bg
+{
+  background: linear-gradient(to right, rgba(139, 138, 138, 0.438), rgba(104, 93, 93, 0.5)), url(../images/services.jpg);
+  background-size: cover;
+}
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 25px;
+}
+.container:before, .container:after {
+  content: " ";
+  display: table;
+}
+.container:after {
+  clear: both;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 760px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 980px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1180px;
+  }
+}
+.title
+{
+  color: rgb(115 106 255);
+}
+
+.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.container-fluid:before, .container-fluid:after {
+  content: " ";
+  display: table;
+}
+.container-fluid:after {
+  clear: both;
+}
+
+.row {
+  margin-left: -20px;
+  margin-right: -20px;
+}
+.row:before, .row:after {
+  content: " ";
+  display: table;
+}
+.row:after {
+  clear: both;
+}
+
+.col-md-4 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 20px;
+  padding-right: 20px;
+  float: left;
+  width: 33.333333%;
+}
+
+.services {
+  position: relative;
+  margin-bottom: 60px;
+}
+.services span {
+  position: absolute;
+  top: 15px;
+  left: 0;
+}
+.services span > i {
+  font-size: 50px;
+  color: #FF5722;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+}
+.services .desc {
+  padding-left: 100px;
+}
+
+.desc > * {
+  margin-top: 20px;
+}
+
+.ti-location-pin:before {
+	content: "\e693";
+}

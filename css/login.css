@@ -1,0 +1,100 @@
+/*Main Body*/
+    div.main
+    {
+        background-image: url(../images/login4.jpg);
+        width: 100%;
+        background-size: cover;
+        height: 595px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+/*Title*/
+    .title
+    {
+        color: white;
+        text-align: center;
+        margin-bottom: 30px;
+        padding: 0px;
+    }
+
+/*Form*/
+    form#frm 
+    {
+        width: 25vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: solid rgba(0, 0, 0, 0.26) 1px;
+        border-radius: 5px;
+        background: white;
+        padding: 20px;
+    }
+
+    /*input boxes*/
+        input[type="text"], input[type="password"] 
+        {
+            margin: 5px 0px 5px;
+            width: 22vw;
+            padding: 10px;
+            border-radius: 5px;
+            border-style: none;
+            outline: none;
+            background-color: rgba(128, 128, 128, 0.3);
+        }
+        input[type="text"]::placeholder, input[type="password"]::placeholder
+        {
+            opacity: 0.5;
+        }
+        input[type="text"]:focus, input[type="password"]:focus
+        {
+            box-shadow: 0px 0px 4px rgba(10, 6, 0, 0.4);
+            outline: none;
+        } 
+
+    /*form text*/
+        form h1
+        {
+            margin-bottom: 20px;
+            text-align: center;
+            font-weight: 500;
+        }
+
+        form p
+        {
+            display: inline;
+            font-size: 14px;
+            
+            color: gray;
+        }
+
+        form a
+        {
+            color: black;
+            font-weight: 800;
+        }
+        #frm div
+        {
+            margin-top: 10px;
+        }
+
+    /*Button*/
+        .button
+        {
+            font-size: 16px;
+            border-style: none;
+            color: white;
+            background: rgb(87, 127, 236);
+            padding: 10px;
+            width: 22vw;   
+            font-weight: 600;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .button:hover
+        {
+            box-shadow: 0px 0px 10px 2px rgb(90, 180, 216, 0.8);
+        }
