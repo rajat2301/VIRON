@@ -14,7 +14,7 @@ $conn = new mysqli("localhost", "root", "", "registerdatabase");
 	if(mysqli_num_rows($result)==1){
 		$_SESSION['user'] = "$username";
 		$_SESSION['suc-msg'] = "Login Successfully!!";
-		header("Location: home.php");
+		header("Location: index.php");
 	}
 	
 	else {

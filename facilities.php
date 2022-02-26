@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VIRON - Facilities</title>
+    <title>Viron - Facilities</title>
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/hf.css">
     <link rel="stylesheet" href="css/facilities.css">
@@ -18,12 +18,12 @@
         <header>
             <div class="head">
                 <!--Logo-->
-                <a href="home.php"><h3 id="logo"><span>V</span>I<span>R</span>O<span>N</span></h3></a>
+                <a href="index.php"><h3 id="logo"><span>V</span>I<span>R</span>O<span>N</span></h3></a>
 
                 <!--Nav-bar-->
                 <div class="main-menu">
                     <ul>
-                        <a href="home.php"><li>HOME</li></a>
+                        <a href="index.php"><li>HOME</li></a>
                         <a href="facilities.php"><li class="active">FACILITIES</li></a>
                         <a href="services.php"><li>SERVICES</li></a>
                         <a href="blog.php"><li>BLOG</li></a>

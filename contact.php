@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>VIRON - Contact Us</title>
+	<title>Luxe - Contact Us</title>
 	
 	<link rel="stylesheet" href="css/hf.css">
 	<link rel="stylesheet" href="css/contact.css">
@@ -18,10 +18,10 @@
 	<div class="bg">
 		<header>
 			<div class="head">
-                <a href="home.php"><h3 id="logo"><span>V</span>I<span>R</span>O<span>N</span></h3></a>
+                <a href="index.php"><h3 id="logo"><span>V</span>I<span>R</span>O<span>N</span></h3></a>
 				<div class="main-menu">
 					<ul>
-						<a href="home.php"><li>HOME</li></a>
+						<a href="index.php"><li>HOME</li></a>
 						<a href="facilities.php"><li>FACILITIES</li></a>
 						<a href="services.php"><li>SERVICES</li></a>
 						<a href="blog.php"><li>BLOG</li></a>
